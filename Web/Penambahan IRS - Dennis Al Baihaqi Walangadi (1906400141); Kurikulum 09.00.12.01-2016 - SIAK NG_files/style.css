@@ -1,0 +1,195 @@
+.irs_steps { background: #EEE; padding: 3px; margin-bottom: 10px; border-left: 5px solid #888; }
+.irs_steps span { padding: 3px 10px; border-right: 1px solid #AAA; }
+.irs_steps div span { padding: 0; border: 0; }
+#step_now { background: #888; color: #FFF; }
+
+table.course_desc { margin: 0; width: 100%; }
+.course_desc td { padding: 1px 1em; border: 0; }
+.course_desc td.top_title { border: 0; padding: 3px 1em; border-bottom: 1px solid #FFF; }
+.course_desc td.title { border-right: 1px solid #FFF; width: 5em; }
+
+li.warning { color: indianred; }
+
+tr.failed td { background: mistyrose; }
+
+table.topinfo { border-collapse: collapse; margin-left: 1em; margin-top: -5px; }
+table.topinfo .title { font: 0.9em Arial; font-weight: bold; color: #888; padding-right: 2em; }
+table.topinfo .hot { color: #693; }
+table.topinfo .desc { font-weight: bold; color: steelblue; padding-right: 3em; }
+table.topinfo td { border-bottom: 1px solid #693; padding: 2px 1em 2px 0; }
+
+td.hour { text-align: center; font: 1.1em Tahoma; }
+td.hour div { border-top: 1px solid #CCF; color: #6C6CB6; }
+
+.cmt-date { font-weight: bold; padding: 0 7px; border-bottom: 1px solid #FFF; }
+.cmt-msg { width: 400px; border-left: 4px solid #AAA; padding: 2px 7px; }
+
+.courselist ul { padding: 0; }
+.courselist li { list-style: none; }
+.courselist input { margin: 0; padding: 0; }
+.courselist a { text-decoration: none; }
+.courselist input, .courselist img { vertical-align: middle; }
+
+/* tree toggle */
+img.tg { cursor: pointer; }
+/* node classes */
+div.in, div.ex { font-weight: bold; }
+div.ft { font-weight: bold; } /* 4term */
+div.or { font-weight: bold; } /* org */
+div.sel { background: #EEE; border: 1px solid #CCC; margin-top: 1px; }
+
+/* selected class row */
+table.box tr.sel td { 
+	background: #FFFEE1;
+}
+
+/* Comments */
+/*.comment, .comment_alt { width: 450px; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; margin: 0 0 6px 0; }
+.comment { background: #E6F4FF; border-color: #CAD6E0; }
+.comment_alt { background: #F8FFE9; border-color: #D1D7C4; }
+.comment .meta, .comment_alt .meta { color: #FFF; border-bottom: 1px solid #DDD; padding: 0 10px; }
+.comment .meta { background: steelblue; }
+.comment_alt .meta { background: olivedrab; }
+.comment .message, .comment_alt .message { padding: 2px 28px; font: 8pt "Lucida Sans Unicode",Tahoma,sans-serif; line-height: 150%; color: #555; }*/
+
+/* Info p */
+p.info { font-family: "Lucida Sans Unicode"; color: #777; border: 0; background: transparent; padding: 0; }
+
+/* PREVIEWPLAN */
+div.year_list { float: left; width: 180px; margin: 0; padding: 0; }
+div.year_list .inner { padding: 5px 10px 0 0; }
+div.year_list h1 { font: bold 1.4em "Century Gothic"; margin: 0; padding: 0; color: #888; margin-bottom: 5px; }
+div.year_list ol { margin: 0; padding: 0; list-style: none; }
+div.year_list li { padding: 5px 0 5px 10px; }
+div.year_list li.hi { background: #DDD; }
+div.year_list li a { text-decoration: none; font-weight: bold; font: 1.4em "Century Gothic"; }
+div.class_list { margin: 0; padding: 0; margin-left: 180px; }
+
+.cal td { 
+	border-color: #c1d6f2; 
+	white-space: normal; 
+	background: url(back.png) 0 5px; 
+}
+.cal td.now { 
+	background: url(back-now.png) 0 5px; 
+}
+.cal div.sch { 
+	margin: 0 5px; 
+	padding-left: 10px; 
+	background: url(round/lb.png) left bottom no-repeat;
+}
+.cal td.now div.sch { 
+	border: 1px solid #DDD; 
+}
+.cal div.sch-inner { 
+	height: 100%; 
+	background: url(round/rb.png) right bottom no-repeat; 
+}
+.cal .left { 
+	position: absolute; 
+	left: -10px; 
+	width: 10px; 
+	height: 24px; 
+	border: 0; 
+	padding: 0; 
+	margin: 0; 
+	height: 24px; 
+	background: url(round/lt.png) left top no-repeat; 
+}
+.cal h3 { 
+	color: #FFF; 
+	font: bold 8pt Tahoma; 
+	line-height: 24px; 
+	margin: 0; 
+	padding: 1px 0;
+	background: #7babba; 
+	overflow: hidden; 
+	border: 0; 
+	background: url(round/rt.png) right top no-repeat; 
+}
+.cal p { 
+	margin: 0; 
+	padding: 0; 
+}
+.cal td div.sch div.desc { 
+}
+.cal div.sch p { 
+	padding: 0 5px 0 4px; 
+	background: transparent;
+	padding-bottom: 10px;
+}
+
+/* Checking detail styles */
+span.title { font-weight: bold; }
+span.error { color: indianred; }
+span.info { color: steelblue; border: 0; padding: 0; }
+span.subinfo { color: #AAA; font-style: italic; }
+
+/* Comments */
+.cmts h4 { 
+	background-repeat: no-repeat;
+	background-position: 0 0%;
+	padding-left: 20px; 
+	border-bottom: 1px solid #CCC; 
+	padding-bottom: 5px; 
+}
+.cmts h4.teacher { 
+	background-image: url(knotes.png);
+}
+.cmts h4.student { 
+	background-image: url(personal.png);
+}
+.cmts div.msg { 
+	margin: 7px 0 10px 0; 
+	padding: 1px 10px;
+	background: #F5F5F5 url(quotes1.gif) 10px 7px no-repeat; 
+}
+.cmts div.msg p {
+	text-indent: 26px;
+	padding-right: 22px; 
+	background: url(quotes2.gif) bottom right no-repeat; 
+	line-height: 1.5em; 
+}
+
+table.box tr td.course {
+	background-image: url(border.png);
+	background-position: top;
+	background-repeat: repeat-x;
+	font-family: 'Lucida Sans Unicode','Lucida Grande','Verdana',Helvetica,sans-serif;
+}
+
+/* ClassInfo */
+div.classinfo {
+	margin-left: 22px;
+}
+div.classinfo h4 {
+	border-bottom: 1px solid #CCC;
+	margin-top: 5px;
+	color: steelblue;
+}
+div.classinfo p {
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+	color: #666;
+}
+div.classinfo ul, div.classinfo ol {
+	margin: 0;
+	padding: 0;
+	padding-left: 24px;
+	color: #666;
+}
+
+/* ClassInfo dl */
+dl { margin-top: 0; }
+dt { font-weight: bold; border-bottom: 1px dotted #CCC; }
+dd { margin-left: 1em; margin-bottom: .5em; }
+
+/*Print*/
+@media print
+{
+body * { visibility: hidden; }
+#printcontent * { visibility: visible; }
+#printcontent { position: absolute; top: 0px; left: 7px; }
+}
+
