@@ -5,7 +5,7 @@ import time
 import datetime
 
 options = Options()
-driver = webdriver.Firefox(firefox_options=options)
+driver = webdriver.Firefox(options=options)
 login_url = "https://academic.ui.ac.id/main/Authentication/"
 homepage_url = "https://academic.ui.ac.id/main/Welcome/"
 logout_url = "https://academic.ui.ac.id/main/Authentication/Logout"
@@ -77,7 +77,7 @@ if __name__ == "__main__":
                 error = False
                 driver.get(login_url)
             refresh_rate = 10
-            if(datetime.datetime.now().minute >= 50): refresh_rate = 5
+            if(datetime.datetime.now().minute >= 50): refresh_rate = 3
             if(datetime.datetime.now().minute >= 55 or datetime.datetime.now().minute <= 5): refresh_rate = 0.5
             time.sleep(refresh_rate)
             print(datetime.datetime.now())

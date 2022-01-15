@@ -9,10 +9,13 @@ SiakWar + Sun Tzu ez ez
 - ![image-20220115133402225](README.assets/image-20220115133402225.png)
 - For example, this is `658875-3`
 
-## Selenium Automated Bot (Bot)
+## Selenium Firefox Automated Bot (Bot)
 
-- Fill username and password
-- ![image-20220115133715642](README.assets/image-20220115133715642.png)
+- Make sure firefox is installed.
+  - https://github.com/mozilla/geckodriver/releases
+- Fill `Username`, `Password`, and `display_name`
+  - ignore `refresh_rate`
+  - ![image-20220115134408496](README.assets/image-20220115134408496.png)
 - Update `matkul_code` dictionary, value is not important, key is `classcode-credit`
 - ![image-20220115133320500](README.assets/image-20220115133320500.png)
 - Run `python SiakTzu.py` in cmd
