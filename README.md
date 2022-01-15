@@ -5,21 +5,30 @@ SiakWar + Sun Tzu ez ez
 
 
 - Login with your UI Account https://academic.ui.ac.id/main/Authentication/
-- Put your classcode-credit and end the file with -1 to input.txt (grab from : https://academic.ui.ac.id/main/Schedule/Index)
-- Example of use :
+- Put your `classcode-credit` (grab from : https://academic.ui.ac.id/main/Schedule/Index)
+- ![image-20220115133402225](README.assets/image-20220115133402225.png)
+- For example, this is `658875-3`
 
-609229-4   
-608202-3   
-607911-3   
--1   
+## Selenium Automated Bot (Bot)
+
+- Fill username and password
+- ![image-20220115133715642](README.assets/image-20220115133715642.png)
+- Update `matkul_code` dictionary, value is not important, key is `classcode-credit`
+- ![image-20220115133320500](README.assets/image-20220115133320500.png)
+- Run `python SiakTzu.py` in cmd
+
+## JS Version (Injects Scripts Using Chrome)
+
+Example of use :
 
 
-- Compile Siaktzu.cpp
-- and type this in the cmd
-- ./SiakTzu < input.txt > output.txt
-- Copy your output to the script
-- Install tampermonkey/greasymonkey
-- Add the script
-- get to this (https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit)
-- Run - Autocheck - Alert will show that you've checked all those found code - Submit
+- Install [tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=id), Add the script, by pressing `Create a new script...`
+- ![image-20220115132840341](README.assets/image-20220115132840341.png)
+- Paste [SiakTzu.js](./SiakTzu.js)
+- get to this (https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit) when you can Add your IRS
+- It will automatically check and submit.
 - Win The War !
+- ![image-20220115133016163](README.assets/image-20220115133016163.png)
+
+
+

@@ -70,7 +70,6 @@ def war_page():
     button.click()
 
 if __name__ == "__main__":
-    #new_term = "Tahun Ajaran 2019/2020 Term 1"
     error = True
     while(True):
         try:
