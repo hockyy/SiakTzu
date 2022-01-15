@@ -11,14 +11,13 @@ SiakWar + Sun Tzu ez ez
 
 ## Selenium Firefox Automated Bot (Bot)
 
-- Make sure firefox is installed.
-  - https://github.com/mozilla/geckodriver/releases
 - Fill `Username`, `Password`, and `display_name`
   - ignore `refresh_rate`
   - ![image-20220115134408496](README.assets/image-20220115134408496.png)
 - Update `matkul_code` dictionary, value is not important, key is `classcode-credit`
 - ![image-20220115133320500](README.assets/image-20220115133320500.png)
 - Run `python SiakTzu.py` in cmd
+  - In case of error, make sure firefox is installed https://github.com/mozilla/geckodriver/releases and find the appropriate firefox option or suitable Operating System (Mac/Linux), put the geckodriver in the same folder.
 
 ## JS Version (Injects Scripts Using Chrome)
 
