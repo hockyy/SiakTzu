@@ -2,37 +2,34 @@
 // @id           SiakTzu
 // @name         SiakTzu
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.1.0
 // @description  This userscript lets you win SiakWar
 // @author       hockyy
-// @match        https://academic.ui.ac.id/main/Schedule/Index?period=*&search=
+// @match        https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit
 // ==/UserScript==
 
-var matkul_code = ["620020-4","620207-4","620077-3","620137-3","620289-3","620173-6"]
-var matkul_len = matkul_code.length;
-var i,j,cnt,now,tmp
 (function() {
-    cnt = 0;
+    var i, j, now;
+    var matkul_code = ["677960-3", "677936-3", "677974-4", "678113-3", "678149-3", "678075-6"]
+    var matkul_len = matkul_code.length;
+    var cnt = 0;
     console.log('Matkul picked :')
     for(i = 0;i < matkul_len;i++){
         console.log(matkul_code[i])
     }
     console.log(matkul_len)
-    for (i = 0;i <= 500;i++){
-        now = 'c'+i.toString()
+    for (i = 0;i <= 800;i++){
+        now = 'c'+i.toString();
         // console.log(now)
         if(document.getElementById(now) == null) continue;
-        console.log(now+' exists')
+        console.log(now+' exists');
         for(j = 0;j < matkul_len;j++){
             if(document.getElementById(now).value != matkul_code[j]) continue;
-            console.log("Found ! " + matkul_code[j] + " " + now)
+            console.log("Found ! " + matkul_code[j] + " " + now);
             cnt++
-            if(document.getElementById(now).checked != true){
-                console.log("Clicking !");
+            console.log("Clicking !");
+            if(!document.getElementById(now).checked){
                 document.getElementById(now).click();
-            }
-            else {
-                console.log("Already selected!");
             }
             break;
         }
