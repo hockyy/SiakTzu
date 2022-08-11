@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
 import sys
 import time
 import datetime
@@ -13,17 +14,13 @@ siak_url = "https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit"
 # siak_url = "file:///C:/Users/ASUS/Desktop/SiakTzu/Web/Penambahan%20IRS%20-%20Dennis%20Al%20Baihaqi%20Walangadi%20(1906400141)%3b%20Kurikulum%2009.00.12.01-2016%20-%20SIAK%20NG.html"
 
 down_string = "Universitas Indonesia"
-matkul_code = {"620020-4": "DDP 2 - B",
-               "620207-4": "PSD - A",
-               "620077-3": "MatDas 1-A",
-               "620137-3": "MD 2 - E",
-               "620289-3": "CP",
-               "620173-6": "MPKT A - C"}
-# matkul_code = { "607788-4": "DDP 1 - A",
-#                 "608186-3": "MD 1 - G"}
+matkul_code = {"696009-3": "Komas - A",
+               "695927-3": "IR",
+               "695972-4": "Komputasi Awan",
+               "695926-3": "Semweb"}
 
 # fill your login credentials here
-Username = ""
+Username = "hocky.yudhiono"
 Password = ""
 refresh_rate = 1
 display_name = "Hocky Yudhiono" # yang ditampilin di pojok kanan atas siak. ex: Galangkangin Gotera
@@ -36,16 +33,16 @@ def logout_page():
 def login_page():
     #driver.get(login_url)
 
-    username = driver.find_element_by_name("u")
+    username = driver.find_element(By.ID, "u")
     username.clear()
     username.send_keys(Username)
     time.sleep(0.1)
 
-    password = driver.find_element_by_name("p")
+    password = driver.find_element(By.ID, "p")
     password.clear()
     password.send_keys(Password)
     time.sleep(0.1)
-    driver.find_element_by_xpath("//input[@value='Login']").click()
+    driver.find_element(By.XPATH, "//input[@value='Login']").click()
     time.sleep(2)
 
 def war_page():
@@ -55,7 +52,7 @@ def war_page():
 
         # antisipasi salah masukkin kode
         try:
-            radio_input = driver.find_element_by_xpath(f"//input[@value='{kode}']")
+            radio_input = driver.find_element(By.XPATH, f"//input[@value='{kode}']")
             if(not radio_input.is_selected()): 
                 radio_input.click()
                 print(f"{name} dipilih! (kode: {kode})")
@@ -66,7 +63,7 @@ def war_page():
             print(f"{name} tidak ada! (kode: {kode})")
             time.sleep(10)
 
-    button = driver.find_element_by_xpath("//input[@value='Simpan IRS']")
+    button = driver.find_element(By.XPATH, "//input[@value='Simpan IRS']")
     button.click()
 
 if __name__ == "__main__":
@@ -124,8 +121,8 @@ if __name__ == "__main__":
             break # SUKSES!!!
         except KeyboardInterrupt:
             sys.exit()
-        except:
-            print("Error happened")
-            time.sleep(0.5)
-            error = True
-            continue
+        # except:
+        #     print("Error happened")
+        #     time.sleep(0.5)
+        #     error = True
+        #     continue

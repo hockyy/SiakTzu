@@ -10,7 +10,7 @@
 
 (function() {
     var i, j, now;
-    var matkul_code = ["677960-3", "677936-3", "677974-4", "678113-3", "678149-3", "678075-6"]
+    var matkul_code = ["696009-3", "695927-3", "695972-4", "695926-3"]
     var matkul_len = matkul_code.length;
     var cnt = 0;
     console.log('Matkul picked :')
