@@ -29,7 +29,7 @@ Example of use :
 - ![image-20220115132840341](README.assets/image-20220115132840341.png)
 - Paste [SiakTzu.js](./SiakTzu.js)
 - get to this (https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit) when you can Add your IRS
-- It will automatically check and submit.
+- It will automatically check, and scroll to bottom, but you must press submit by your own.
 - Win The War !
 - ![image-20220115133016163](README.assets/image-20220115133016163.png)
 
